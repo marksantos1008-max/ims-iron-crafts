@@ -1,0 +1,3482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IMS Iron Crafts | Steel Fabrication & Welding</title>
+
+<meta name="description" content="IMS Iron Crafts specializes in steel gates, booths, railings, structural steel, custom fabrication and welding in Taytay, Rizal.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --orange:#ff8a00;
+    --orange2:#ffad42;
+    --dark:#080a0d;
+    --dark2:#0e1217;
+    --card:#151a20;
+    --border:#2b333d;
+    --text:#ffffff;
+    --muted:#aeb6bf;
+    --green:#25d366;
+    --facebook:#1877f2;
+}
+
+html{
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    width:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--dark);
+    color:var(--text);
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+textarea{
+    font-family:inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:78px;
+    z-index:999;
+    background:rgba(7,9,12,.94);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.navbar{
+    width:100%;
+    max-width:1250px;
+    height:100%;
+    margin:auto;
+    padding:0 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width:0;
+}
+
+.logo img{
+    width:56px;
+    height:56px;
+    min-width:56px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:50%;
+    border:2px solid rgba(255,138,0,.7);
+    background:#11151a;
+}
+
+.logo-text{
+    font-size:19px;
+    font-weight:900;
+    letter-spacing:.5px;
+    white-space:nowrap;
+}
+
+.logo-text span{
+    color:var(--orange);
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#ddd;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--orange);
+}
+
+.nav-quote{
+    padding:11px 19px;
+    background:var(--orange);
+    color:#111 !important;
+    border-radius:7px;
+}
+
+.nav-quote:hover{
+    background:var(--orange2);
+}
+
+.menu-btn{
+    display:none;
+    width:44px;
+    height:44px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    background:#151a20;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    touch-action:manipulation;
+}
+
+.mobile-menu{
+    display:none;
+    position:absolute;
+    top:78px;
+    left:0;
+    width:100%;
+    padding:15px;
+    background:#0d1014;
+    border-bottom:1px solid var(--border);
+}
+
+.mobile-menu.active{
+    display:block;
+}
+
+.mobile-menu a{
+    display:block;
+    padding:14px;
+    border-radius:7px;
+    font-weight:bold;
+    color:#ddd;
+}
+
+.mobile-menu a:hover{
+    background:#1b2026;
+    color:var(--orange);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:140px 20px 90px;
+    position:relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4,6,8,.96),
+            rgba(4,6,8,.78),
+            rgba(4,6,8,.88)
+        ),
+        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2000&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:1250px;
+    margin:auto;
+}
+
+.hero-label{
+    display:inline-block;
+    padding:8px 14px;
+    border:1px solid rgba(255,138,0,.5);
+    border-radius:30px;
+    color:var(--orange);
+    background:rgba(255,138,0,.06);
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:22px;
+}
+
+.hero h1{
+    max-width:900px;
+    font-size:clamp(45px,7vw,82px);
+    line-height:.98;
+    letter-spacing:-3px;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:var(--orange);
+}
+
+.hero p{
+    max-width:650px;
+    color:#c5c9ce;
+    font-size:19px;
+    margin-bottom:32px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:52px;
+    padding:13px 25px;
+    border-radius:7px;
+    font-weight:bold;
+    border:1px solid var(--orange);
+    background:var(--orange);
+    color:#111;
+    transition:.3s;
+    cursor:pointer;
+    touch-action:manipulation;
+}
+
+.btn:hover{
+    background:var(--orange2);
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    background:transparent;
+    color:white;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    background:#11151a;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+}
+
+.stats-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.stat{
+    text-align:center;
+    padding:30px 15px;
+    border-right:1px solid var(--border);
+}
+
+.stat:last-child{
+    border-right:0;
+}
+
+.stat h3{
+    color:var(--orange);
+    font-size:30px;
+}
+
+.stat p{
+    color:#999;
+    font-size:13px;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+section{
+    padding:105px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-heading{
+    max-width:700px;
+    margin-bottom:50px;
+}
+
+.section-heading.center{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.section-heading .label{
+    color:var(--orange);
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    font-size:45px;
+    line-height:1.1;
+    margin:10px 0 15px;
+}
+
+.section-heading h2 span{
+    color:var(--orange);
+}
+
+.section-heading p{
+    color:var(--muted);
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    background:var(--dark);
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(255,138,0,.55);
+}
+
+.service-image{
+    height:240px;
+    position:relative;
+    overflow:hidden;
+    background:#11151a;
+}
+
+.service-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    transition:.4s;
+}
+
+.service-card:hover .service-image img{
+    transform:scale(1.05);
+}
+
+.service-number{
+    position:absolute;
+    top:15px;
+    left:15px;
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--orange);
+    color:#111;
+    font-weight:900;
+    z-index:2;
+}
+
+.service-content{
+    padding:25px;
+}
+
+.service-content h3{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.service-content h3 span{
+    color:var(--orange);
+}
+
+.service-content p{
+    color:#aeb5bd;
+    font-size:14px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects{
+    background:#11151a;
+}
+
+.gallery-filter{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:35px;
+}
+
+.filter-btn{
+    padding:10px 18px;
+    border:1px solid var(--border);
+    border-radius:7px;
+    background:var(--card);
+    color:#bbb;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    touch-action:manipulation;
+}
+
+.filter-btn.active{
+    background:var(--orange);
+    color:#111;
+    border-color:var(--orange);
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+    background:var(--card);
+    border:1px solid var(--border);
+}
+
+.gallery-item.hide{
+    display:none;
+}
+
+.gallery-image{
+    position:relative;
+    overflow:hidden;
+    height:320px;
+    cursor:pointer;
+    background:#101318;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.gallery-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    cursor:pointer;
+    pointer-events:auto;
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.gallery-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    padding:22px;
+    background:linear-gradient(
+        transparent 20%,
+        rgba(0,0,0,.92)
+    );
+    opacity:0;
+    transition:.35s;
+    pointer-events:none;
+}
+
+.gallery-item:hover .gallery-overlay{
+    opacity:1;
+}
+
+.gallery-overlay span{
+    color:var(--orange);
+    font-size:11px;
+    font-weight:bold;
+}
+
+.gallery-overlay h3{
+    margin:5px 0 2px;
+    font-size:20px;
+}
+
+.gallery-overlay p{
+    color:#bbb;
+    font-size:13px;
+}
+
+.gallery-overlay button{
+    width:45px;
+    height:45px;
+    flex-shrink:0;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:50%;
+    background:rgba(0,0,0,.65);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    pointer-events:auto;
+    touch-action:manipulation;
+}
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.gallery-lightbox{
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:rgba(0,0,0,.95);
+    touch-action:manipulation;
+}
+
+.gallery-lightbox.active{
+    display:flex;
+}
+
+.gallery-lightbox img{
+    display:block;
+    max-width:92vw;
+    max-height:82vh;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+    border-radius:8px;
+    pointer-events:none;
+    user-select:none;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(20,20,20,.85);
+    color:white;
+    cursor:pointer;
+    z-index:5;
+    touch-action:manipulation;
+}
+
+.lightbox-close{
+    top:20px;
+    right:20px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    font-size:20px;
+}
+
+.lightbox-prev,
+.lightbox-next{
+    top:50%;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    font-size:35px;
+    transform:translateY(-50%);
+}
+
+.lightbox-prev{
+    left:15px;
+}
+
+.lightbox-next{
+    right:15px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    background:var(--dark);
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    max-width:850px;
+    margin:auto;
+}
+
+.about-content h2{
+    font-size:45px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.about-content h2 span{
+    color:var(--orange);
+}
+
+.about-content p{
+    color:#abb2ba;
+    margin-bottom:15px;
+}
+
+.about-content strong{
+    color:white;
+}
+
+.about-list{
+    list-style:none;
+    margin:25px 0;
+}
+
+.about-list li{
+    margin-bottom:12px;
+    color:#ddd;
+}
+
+.about-list li::before{
+    content:"✓";
+    color:var(--orange);
+    font-weight:bold;
+    margin-right:10px;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.process{
+    background:#11151a;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.process-card{
+    padding:30px 20px;
+    text-align:center;
+    border:1px solid var(--border);
+    background:var(--card);
+    border-radius:10px;
+}
+
+.process-number{
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 18px;
+    background:var(--orange);
+    color:#111;
+    border-radius:50%;
+    font-size:20px;
+    font-weight:900;
+}
+
+.process-card h3{
+    margin-bottom:8px;
+}
+
+.process-card p{
+    color:#999;
+    font-size:14px;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq{
+    background:var(--dark);
+}
+
+.faq-container{
+    max-width:850px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#151a20;
+    border:1px solid var(--border);
+    border-radius:8px;
+    margin-bottom:12px;
+    overflow:hidden;
+}
+
+.faq-item.active{
+    border-color:rgba(255,138,0,.55);
+}
+
+.faq-question{
+    width:100%;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:none;
+    border:none;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    text-align:left;
+    cursor:pointer;
+    touch-action:manipulation;
+}
+
+.faq-question span:last-child{
+    color:var(--orange);
+    font-size:24px;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:.35s ease;
+}
+
+.faq-answer p{
+    padding:0 20px 20px;
+    color:#9fa6ae;
+    font-size:14px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#11151a;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+}
+
+.contact-info,
+.quote-form{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+}
+
+.contact-info{
+    padding:35px;
+}
+
+.contact-info h3{
+    color:var(--orange);
+    font-size:25px;
+    margin-bottom:25px;
+}
+
+.contact-item{
+    display:flex;
+    gap:13px;
+    margin-bottom:20px;
+}
+
+.contact-icon{
+    width:40px;
+    height:40px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:7px;
+    background:#22282f;
+    color:var(--orange);
+    font-size:19px;
+}
+
+.contact-item strong{
+    display:block;
+}
+
+.contact-item span{
+    color:#9fa6ae;
+    font-size:14px;
+}
+
+.contact-link{
+    color:#c8cdd2;
+}
+
+.gmail-btn{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.facebook-btn{
+    width:100%;
+    margin-bottom:10px;
+    background:var(--facebook);
+    color:white;
+    border-color:var(--facebook);
+}
+
+.maps-btn{
+    width:100%;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.quote-form{
+    padding:35px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    color:#ddd;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #343b44;
+    border-radius:7px;
+    background:#0c0f13;
+    color:white;
+    outline:none;
+}
+
+.form-group input{
+    height:50px;
+}
+
+.form-group textarea{
+    min-height:130px;
+    resize:vertical;
+}
+
+.quote-form .btn{
+    width:100%;
+    margin-top:5px;
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-wrapper{
+    margin-top:25px;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid var(--border);
+}
+
+.map-wrapper iframe{
+    display:block;
+    width:100%;
+    height:360px;
+    border:0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:40px 20px;
+    background:#07090c;
+    text-align:center;
+    color:#777;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+footer strong{
+    color:var(--orange);
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--green);
+    color:white;
+    font-size:27px;
+    z-index:998;
+}
+
+
+/* =========================
+   BACK TOP
+========================= */
+
+#topBtn{
+    position:fixed;
+    right:22px;
+    bottom:90px;
+    width:44px;
+    height:44px;
+    border:0;
+    border-radius:50%;
+    background:var(--orange);
+    color:#111;
+    font-size:20px;
+    font-weight:bold;
+    display:none;
+    z-index:998;
+    cursor:pointer;
+}
+
+
+/* =========================
+   MOBILE BOTTOM
+========================= */
+
+.mobile-bottom{
+    display:none;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:1000px){
+
+    .service-grid,
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    body{
+        padding-bottom:65px;
+    }
+
+    header{
+        height:70px;
+    }
+
+    .navbar{
+        padding:0 12px;
+    }
+
+    .logo{
+        gap:8px;
+        min-width:0;
+    }
+
+    .logo img{
+        width:46px;
+        height:46px;
+        min-width:46px;
+        object-fit:cover;
+        object-position:center;
+        border-width:2px;
+    }
+
+    .logo-text{
+        font-size:14px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-shrink:0;
+    }
+
+    .mobile-menu{
+        top:70px;
+    }
+
+    .hero{
+        min-height:100svh;
+        padding:120px 18px 70px;
+
+        background-image:
+            linear-gradient(
+                rgba(4,6,8,.82),
+                rgba(4,6,8,.92)
+            ),
+            url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80");
+
+        background-position:center;
+        background-size:cover;
+        background-attachment:scroll;
+    }
+
+    .hero h1{
+        font-size:42px;
+        letter-spacing:-2px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        display:block;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        margin:5px 0;
+    }
+
+    section{
+        width:100%;
+        padding:70px 15px;
+    }
+
+    .container{
+        width:100%;
+    }
+
+    .section-heading{
+        width:100%;
+        margin-bottom:35px;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .section-heading p{
+        font-size:14px;
+    }
+
+    .stats-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat{
+        padding:22px 10px;
+        border-bottom:1px solid var(--border);
+    }
+
+    .stat h3{
+        font-size:25px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-image{
+        width:100%;
+        height:230px;
+    }
+
+    .service-image img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .gallery-filter{
+        width:100%;
+        justify-content:flex-start;
+        overflow-x:auto;
+        flex-wrap:nowrap;
+        padding-bottom:8px;
+        scrollbar-width:none;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .gallery-filter::-webkit-scrollbar{
+        display:none;
+    }
+
+    .filter-btn{
+        flex:0 0 auto;
+        white-space:nowrap;
+        padding:9px 15px;
+    }
+
+    .gallery-grid{
+        width:100%;
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .gallery-item{
+        width:100%;
+    }
+
+    .gallery-image{
+        width:100%;
+        height:270px;
+        cursor:pointer;
+        touch-action:manipulation;
+        -webkit-tap-highlight-color:transparent;
+    }
+
+    .gallery-image img{
+        width:100%;
+        height:100%;
+        min-width:100%;
+        min-height:100%;
+        object-fit:cover;
+        object-position:center;
+        cursor:pointer;
+        pointer-events:auto;
+        touch-action:manipulation;
+    }
+
+    .gallery-overlay{
+        opacity:1;
+        padding:16px;
+        pointer-events:none;
+        background:linear-gradient(
+            transparent 15%,
+            rgba(0,0,0,.88)
+        );
+    }
+
+    .gallery-overlay button{
+        pointer-events:auto;
+        touch-action:manipulation;
+    }
+
+    .gallery-overlay h3{
+        font-size:17px;
+    }
+
+    .gallery-overlay p{
+        font-size:12px;
+    }
+
+    .gallery-lightbox{
+        padding:15px;
+        touch-action:manipulation;
+    }
+
+    .gallery-lightbox img{
+        width:auto;
+        max-width:92vw;
+        max-height:72vh;
+        object-fit:contain;
+    }
+
+    .lightbox-prev,
+    .lightbox-next{
+        width:42px;
+        height:42px;
+        font-size:28px;
+    }
+
+    .lightbox-prev{
+        left:8px;
+    }
+
+    .lightbox-next{
+        right:8px;
+    }
+
+    .lightbox-close{
+        top:12px;
+        right:12px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        max-width:100%;
+    }
+
+    .about-content h2{
+        font-size:32px;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .contact-info,
+    .quote-form{
+        width:100%;
+        padding:25px 20px;
+    }
+
+    .map-wrapper iframe{
+        height:280px;
+    }
+
+    .whatsapp{
+        display:none;
+    }
+
+    #topBtn{
+        right:15px;
+        bottom:80px;
+    }
+
+    .mobile-bottom{
+        position:fixed;
+        left:0;
+        bottom:0;
+        width:100%;
+        height:65px;
+        display:flex;
+        background:rgba(8,10,13,.97);
+        border-top:1px solid var(--border);
+        z-index:1000;
+        backdrop-filter:blur(12px);
+    }
+
+    .mobile-bottom a{
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        color:#aaa;
+        font-size:10px;
+        font-weight:bold;
+        touch-action:manipulation;
+    }
+
+    .mobile-bottom span{
+        font-size:20px;
+        line-height:23px;
+    }
+
+    .mobile-bottom .quote{
+        margin:7px;
+        border-radius:7px;
+        background:var(--orange);
+        color:#111;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media(max-width:380px){
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .logo-text{
+        font-size:12px;
+    }
+
+    .logo img{
+        width:42px;
+        height:42px;
+        min-width:42px;
+        object-fit:cover;
+        object-position:center;
+    }
+
+    .section-heading h2{
+        font-size:28px;
+    }
+
+    .gallery-image{
+        height:250px;
+    }
+
+}
+
+
+/* =========================
+   IMAGE DISPLAY FIX
+========================= */
+
+.service-image img,
+.gallery-image img{
+    display:block;
+    opacity:1;
+    visibility:visible;
+    -webkit-user-drag:none;
+}
+
+.service-image,
+.gallery-image{
+    background:#11151a;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="navbar">
+
+<a href="#home" class="logo">
+
+<img
+    src="./images/ims-logo-mobile.jpg"
+    onerror="this.onerror=null;this.src='./images/ims-logo.png.jpg';"
+    alt="IMS Iron Crafts Logo"
+    loading="eager">
+
+<div class="logo-text">
+    IMS <span>IRON CRAFTS</span>
+</div>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact" class="nav-quote">Get a Quote</a></li>
+
+</ul>
+
+<button
+    class="menu-btn"
+    id="menuBtn"
+    onclick="toggleMenu()"
+    aria-label="Open Menu">
+    ☰
+</button>
+
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#services" onclick="closeMenu()">Services</a>
+<a href="#projects" onclick="closeMenu()">Projects</a>
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#faq" onclick="closeMenu()">FAQ</a>
+<a href="#contact" onclick="closeMenu()">Get a Quote</a>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-label">
+STEEL FABRICATION • WELDING • CUSTOM WORKS
+</div>
+
+<h1>
+STRONG STEEL.<br>
+<span>BUILT TO LAST.</span>
+</h1>
+
+<p>
+Professional steel fabrication for gates, booths,
+railings, structural works, canopies and custom
+metal projects in Taytay, Rizal.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+View Our Projects
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Request a Quote
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<div class="stats">
+
+<div class="stats-container">
+
+<div class="stat">
+<h3>100%</h3>
+<p>Custom Fabrication</p>
+</div>
+
+<div class="stat">
+<h3>6+</h3>
+<p>Steel Services</p>
+</div>
+
+<div class="stat">
+<h3>Quality</h3>
+<p>Workmanship</p>
+</div>
+
+<div class="stat">
+<h3>Local</h3>
+<p>Taytay, Rizal</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-heading center">
+
+<div class="label">
+What We Do
+</div>
+
+<h2>
+Our <span>Steel Services</span>
+</h2>
+
+<p>
+From simple steel gates to large custom fabrication,
+we build according to your project requirements.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<!-- 01 STEEL GATES -->
+
+<div class="service-card">
+
+<div class="service-image">
+
+<span class="service-number">01</span>
+
+<img
+src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
+alt="Steel Gates">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Steel <span>Gates</span>
+</h3>
+
+<p>
+Custom steel gates for residential,
+commercial and industrial properties.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 02 STEEL BOOTHS -->
+
+<div class="service-card">
+
+<div class="service-image">
+
+<span class="service-number">02</span>
+
+<img
+src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=85"
+alt="Steel Booths">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Steel <span>Booths</span>
+</h3>
+
+<p>
+Guard houses, security booths,
+cashier booths and custom enclosures.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 03 STEEL RAILINGS -->
+
+<div class="service-card">
+
+<div class="service-image">
+
+<span class="service-number">03</span>
+
+<img
+src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+alt="Steel Railings">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Steel <span>Railings</span>
+</h3>
+
+<p>
+Stair railings, balcony railings,
+handrails and safety barriers.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 04 STRUCTURAL STEEL -->
+
+<div class="service-card">
+
+<div class="service-image">
+
+<span class="service-number">04</span>
+
+<img
+src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=85"
+alt="Structural Steel">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Structural <span>Steel</span>
+</h3>
+
+<p>
+Beams, columns, frames, supports,
+canopies and structural steel works.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 05 CUSTOM FABRICATION -->
+
+<div class="service-card">
+
+<div class="service-image">
+
+<span class="service-number">05</span>
+
+<img
+src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85"
+alt="Custom Steel Fabrication">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Custom <span>Fabrication</span>
+</h3>
+
+<p>
+Custom steel projects based on your
+measurements, drawings and ideas.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- 06 STEEL REPAIR -->
+
+<div class="service-card">
+
+<div class="service-image">
+
+<span class="service-number">06</span>
+
+<img
+src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1200&q=85"
+alt="Steel Repair">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Steel <span>Repair</span>
+</h3>
+
+<p>
+Welding, reinforcement, modification
+and repair of existing steel works.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+<div class="container">
+
+<div class="section-heading center">
+
+<div class="label">
+Our Work
+</div>
+
+<h2>
+Project <span>Gallery</span>
+</h2>
+
+<p>
+Explore our steel fabrication, welding
+and custom metal works.
+</p>
+
+</div>
+
+
+<div class="gallery-filter">
+
+<button class="filter-btn active"
+onclick="filterGallery('all',this)">
+All Projects
+</button>
+
+<button class="filter-btn"
+onclick="filterGallery('gates',this)">
+Gates
+</button>
+
+<button class="filter-btn"
+onclick="filterGallery('booths',this)">
+Booths
+</button>
+
+<button class="filter-btn"
+onclick="filterGallery('railings',this)">
+Railings
+</button>
+
+<button class="filter-btn"
+onclick="filterGallery('structural',this)">
+Structural
+</button>
+
+<button class="filter-btn"
+onclick="filterGallery('custom',this)">
+Custom Works
+</button>
+
+</div>
+
+
+<div class="gallery-grid">
+
+
+<!-- GATE 1 -->
+
+<div class="gallery-item gates">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/steel-gates-1.jpg"
+alt="Custom Steel Gate">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL GATES</span>
+<h3>Custom Steel Gate</h3>
+<p>Residential Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- GATE 2 -->
+
+<div class="gallery-item gates">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/steel-gates-2.jpg"
+alt="Modern Steel Gate">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL GATES</span>
+<h3>Modern Steel Gate</h3>
+<p>Residential Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BOOTH 1 -->
+
+<div class="gallery-item booths">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/steel-booths-1.jpg"
+alt="Security Booth">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL BOOTHS</span>
+<h3>Security Booth</h3>
+<p>Commercial Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BOOTH 2 -->
+
+<div class="gallery-item booths">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/steel-booths-2.jpg"
+alt="Guard House Booth">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL BOOTHS</span>
+<h3>Guard House</h3>
+<p>Commercial Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RAILING 1 -->
+
+<div class="gallery-item railings">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/railings-1.jpg"
+alt="Steel Stair Railings">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL RAILINGS</span>
+<h3>Stair Railings</h3>
+<p>Residential Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RAILING 2 -->
+
+<div class="gallery-item railings">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/railings-2.jpg"
+alt="Balcony Steel Railings">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL RAILINGS</span>
+<h3>Balcony Railings</h3>
+<p>Residential Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- STRUCTURAL 1 -->
+
+<div class="gallery-item structural">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/structural-steel-1.jpg"
+alt="Structural Steel">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STRUCTURAL STEEL</span>
+<h3>Steel Structure</h3>
+<p>Commercial Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- STRUCTURAL 2 -->
+
+<div class="gallery-item structural">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/structural-steel-2.jpg"
+alt="Steel Canopy">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STRUCTURAL STEEL</span>
+<h3>Steel Canopy</h3>
+<p>Commercial Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CUSTOM 1 -->
+
+<div class="gallery-item custom">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/custom-fabrication-1.jpg"
+alt="Custom Steel Fabrication">
+
+<div class="gallery-overlay">
+
+<div>
+<span>CUSTOM WORKS</span>
+<h3>Custom Fabrication</h3>
+<p>Special Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CUSTOM 2 -->
+
+<div class="gallery-item custom">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/custom-fabrication-2.jpg"
+alt="Custom Metal Work">
+
+<div class="gallery-overlay">
+
+<div>
+<span>CUSTOM WORKS</span>
+<h3>Custom Metal Work</h3>
+<p>Special Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- REPAIR -->
+
+<div class="gallery-item custom">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/steel-repair-1.jpg"
+alt="Steel Repair">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL REPAIR</span>
+<h3>Steel Repair</h3>
+<p>Welding & Modification</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- IMS PROJECT 1 -->
+
+<div class="gallery-item gates">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/ims-project-gate-1.png"
+alt="IMS Iron Crafts Steel Gate Project">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL GATES</span>
+<h3>Sliding Steel Gate</h3>
+<p>IMS Iron Crafts Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- IMS PROJECT 2 -->
+
+<div class="gallery-item gates">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/ims-project-gate-2.png"
+alt="IMS Iron Crafts Steel Gate Project">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL GATES</span>
+<h3>Decorative Steel Gate</h3>
+<p>IMS Iron Crafts Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- IMS PROJECT 3 -->
+
+<div class="gallery-item gates">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/ims-project-gate-3.png"
+alt="IMS Iron Crafts Modern Steel Gate">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL GATES</span>
+<h3>Modern Steel Gate</h3>
+<p>IMS Iron Crafts Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- IMS BOOTH -->
+
+<div class="gallery-item booths">
+
+<div class="gallery-image"
+onclick="openGalleryFromContainer(this)">
+
+<img
+src="./images/ims-project-booth-1.png"
+alt="IMS Iron Crafts Steel Booth Project">
+
+<div class="gallery-overlay">
+
+<div>
+<span>STEEL BOOTHS</span>
+<h3>Security Booth</h3>
+<p>IMS Iron Crafts Project</p>
+</div>
+
+<button
+type="button"
+onclick="openGalleryFromButton(event,this)">
+🔍
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div class="gallery-lightbox" id="galleryLightbox">
+
+<button class="lightbox-close"
+type="button"
+onclick="closeGallery()">
+✕
+</button>
+
+<button class="lightbox-prev"
+type="button"
+onclick="previousImage()">
+‹
+</button>
+
+<img
+id="lightboxImage"
+src=""
+alt="Project Preview">
+
+<button class="lightbox-next"
+type="button"
+onclick="nextImage()">
+›
+</button>
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-content">
+
+<div class="section-heading">
+
+<div class="label">
+About Us
+</div>
+
+<h2>
+Quality <span>Steel Works</span>
+</h2>
+
+</div>
+
+<p>
+<strong>IMS Iron Crafts</strong> specializes in
+steel fabrication, welding and custom metal works
+for residential, commercial and industrial projects.
+</p>
+
+<p>
+We fabricate gates, booths, railings, structural steel,
+canopies, custom metal works and other steel projects
+based on your requirements.
+</p>
+
+<ul class="about-list">
+
+<li>Custom designs and measurements</li>
+<li>Residential and commercial projects</li>
+<li>Steel fabrication and welding</li>
+<li>Repair and modification services</li>
+<li>Installation available depending on project</li>
+
+</ul>
+
+<a href="#contact" class="btn">
+Talk About Your Project
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section class="process">
+
+<div class="container">
+
+<div class="section-heading center">
+
+<div class="label">
+Our Process
+</div>
+
+<h2>
+From Idea <span>to Steel</span>
+</h2>
+
+<p>
+A simple process to turn your project requirements
+into finished steel work.
+</p>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process-card">
+<div class="process-number">1</div>
+<h3>Consultation</h3>
+<p>Tell us about your project, design and requirements.</p>
+</div>
+
+<div class="process-card">
+<div class="process-number">2</div>
+<h3>Design & Quote</h3>
+<p>We discuss measurements, materials and estimated cost.</p>
+</div>
+
+<div class="process-card">
+<div class="process-number">3</div>
+<h3>Fabrication</h3>
+<p>Cutting, welding, assembling and finishing begins.</p>
+</div>
+
+<div class="process-card">
+<div class="process-number">4</div>
+<h3>Installation</h3>
+<p>Finished steel work is delivered and installed when applicable.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="faq" id="faq">
+
+<div class="container">
+
+<div class="section-heading center">
+
+<div class="label">
+FAQ
+</div>
+
+<h2>
+Frequently Asked <span>Questions</span>
+</h2>
+
+</div>
+
+<div class="faq-container">
+
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>What steel projects do you make?</span>
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+We fabricate gates, booths, railings,
+structural steel, canopies, custom metal works
+and other steel projects.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>Do you accept custom designs?</span>
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Yes. You can send us your drawing, photo,
+sketch, measurements or preferred design.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>How do I request a quotation?</span>
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Send your project type, measurements,
+location and design details through our
+quotation form or WhatsApp.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>Do you provide installation?</span>
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Installation can be arranged depending on
+the project size, location and requirements.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>How long does fabrication take?</span>
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Completion time depends on the design,
+materials, size, quantity and complexity
+of the project.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question"
+onclick="toggleFAQ(this)">
+
+<span>Do you repair existing steel works?</span>
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+Yes. We provide welding, repair,
+modification and reinforcement services.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading center">
+
+<div class="label">
+Let's Work Together
+</div>
+
+<h2>
+Request a <span>Free Quote</span>
+</h2>
+
+<p>
+Send us your project details and we'll contact you.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-info">
+
+<h3>
+IMS IRON CRAFTS
+</h3>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+📍
+</div>
+
+<div>
+
+<strong>Location</strong>
+
+<span>
+26 Salamat, Brgy. San Juan,
+Taytay, Rizal, Philippines
+</span>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+📞
+</div>
+
+<div>
+
+<strong>Phone</strong>
+
+<span>
+
+<a class="contact-link"
+href="tel:+639355445981">
+
+0935 544 5981
+
+</a>
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+💬
+</div>
+
+<div>
+
+<strong>WhatsApp</strong>
+
+<span>
+
+<a class="contact-link"
+target="_blank"
+rel="noopener noreferrer"
+href="https://wa.me/639355445981">
+
+0935 544 5981
+
+</a>
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+✉️
+</div>
+
+<div>
+
+<strong>Gmail</strong>
+
+<span>
+
+<a class="contact-link"
+href="mailto:ivansantos0912@gmail.com">
+
+ivansantos0912@gmail.com
+
+</a>
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+🕒
+</div>
+
+<div>
+
+<strong>Business Hours</strong>
+
+<span>
+Monday - Saturday<br>
+8:00 AM - 5:00 PM
+</span>
+
+</div>
+
+</div>
+
+
+<a class="btn gmail-btn"
+target="_blank"
+rel="noopener noreferrer"
+href="https://mail.google.com/mail/?view=cm&fs=1&to=ivansantos0912@gmail.com&su=Steel%20Fabrication%20Inquiry&body=Hello%20IMS%20Iron%20Crafts%2C%0A%0AI%20would%20like%20to%20ask%20about%20your%20steel%20fabrication%20services.%0A%0AProject%20Type%3A%0AProject%20Details%3A%0A%0AThank%20you!">
+
+✉️ Send Inquiry via Gmail
+
+</a>
+
+
+<a class="btn facebook-btn"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.facebook.com/profile.php?id=61584230409838&sk=about">
+
+📘 Visit Our Facebook Page
+
+</a>
+
+
+<a class="btn maps-btn"
+target="_blank"
+rel="noopener noreferrer"
+href="https://www.google.com/maps/search/?api=1&query=26+Salamat+Brgy+San+Juan+Taytay+Rizal">
+
+📍 Open Google Maps
+
+</a>
+
+</div>
+
+
+<div class="quote-form">
+
+<form onsubmit="sendWhatsApp(event)">
+
+<div class="form-group">
+
+<label for="name">
+Your Name
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+autocomplete="name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="phone">
+Phone Number
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter your phone number"
+autocomplete="tel"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="project">
+Project Type
+</label>
+
+<input
+type="text"
+id="project"
+placeholder="Example: Steel Gate"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="message">
+Project Details
+</label>
+
+<textarea
+id="message"
+placeholder="Measurements, design, location, quantity, etc."
+required></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="btn">
+
+💬 Send Inquiry via WhatsApp
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<div class="map-wrapper">
+
+<iframe
+src="https://www.google.com/maps?q=26+Salamat+Brgy+San+Juan+Taytay+Rizal&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<p>
+© 2026 <strong>IMS IRON CRAFTS</strong>.
+All Rights Reserved.
+</p>
+
+<p>
+Steel Fabrication • Welding • Custom Steel Works
+</p>
+
+</footer>
+
+
+<!-- =========================
+     MOBILE BOTTOM
+========================= -->
+
+<div class="mobile-bottom">
+
+<a href="#home">
+<span>⌂</span>
+Home
+</a>
+
+<a href="#services">
+<span>⚒</span>
+Services
+</a>
+
+<a href="#contact" class="quote">
+<span>💬</span>
+Quote
+</a>
+
+<a href="#projects">
+<span>▣</span>
+Works
+</a>
+
+<a href="#contact">
+<span>☎</span>
+Contact
+</a>
+
+</div>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<a
+class="whatsapp"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Chat with IMS Iron Crafts on WhatsApp"
+href="https://wa.me/639355445981?text=Hello%20IMS%20Iron%20Crafts!%20I%20would%20like%20to%20ask%20about%20your%20steel%20fabrication%20services.">
+
+☎
+
+</a>
+
+
+<!-- =========================
+     BACK TOP
+========================= -->
+
+<button
+id="topBtn"
+onclick="scrollTopPage()"
+aria-label="Back to top">
+
+↑
+
+</button>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu(){
+
+    const menu =
+    document.getElementById("mobileMenu");
+
+    const button =
+    document.getElementById("menuBtn");
+
+    menu.classList.toggle("active");
+
+    button.innerHTML =
+    menu.classList.contains("active")
+    ? "✕"
+    : "☰";
+}
+
+
+function closeMenu(){
+
+    document
+    .getElementById("mobileMenu")
+    .classList.remove("active");
+
+    document
+    .getElementById("menuBtn")
+    .innerHTML="☰";
+}
+
+
+/* =========================
+   GALLERY FILTER
+========================= */
+
+function filterGallery(category,button){
+
+    const items =
+    document.querySelectorAll(".gallery-item");
+
+    const buttons =
+    document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    items.forEach(item=>{
+
+        if(
+            category==="all" ||
+            item.classList.contains(category)
+        ){
+
+            item.classList.remove("hide");
+
+        }else{
+
+            item.classList.add("hide");
+
+        }
+
+    });
+
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+let galleryImages = [];
+let currentImage = 0;
+
+
+function updateGalleryImages(){
+
+    galleryImages =
+    Array.from(
+        document.querySelectorAll(
+            ".gallery-item:not(.hide) .gallery-image img"
+        )
+    );
+
+}
+
+
+function openGalleryFromContainer(container){
+
+    const image =
+    container.querySelector("img");
+
+    if(!image){
+        return;
+    }
+
+    openGallery(image);
+}
+
+
+function openGalleryFromButton(event,button){
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    const container =
+    button.closest(".gallery-image");
+
+    if(!container){
+        return;
+    }
+
+    const image =
+    container.querySelector("img");
+
+    if(!image){
+        return;
+    }
+
+    openGallery(image);
+}
+
+
+function openGallery(image){
+
+    updateGalleryImages();
+
+    currentImage =
+    galleryImages.indexOf(image);
+
+    if(currentImage < 0){
+        currentImage = 0;
+    }
+
+    const lightbox =
+    document.getElementById("galleryLightbox");
+
+    const lightboxImage =
+    document.getElementById("lightboxImage");
+
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt;
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closeGallery(){
+
+    const lightbox =
+    document.getElementById("galleryLightbox");
+
+    lightbox.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+function nextImage(){
+
+    updateGalleryImages();
+
+    if(galleryImages.length === 0){
+        return;
+    }
+
+    currentImage++;
+
+    if(currentImage >= galleryImages.length){
+        currentImage = 0;
+    }
+
+    showGalleryImage();
+
+}
+
+
+function previousImage(){
+
+    updateGalleryImages();
+
+    if(galleryImages.length === 0){
+        return;
+    }
+
+    currentImage--;
+
+    if(currentImage < 0){
+        currentImage = galleryImages.length - 1;
+    }
+
+    showGalleryImage();
+
+}
+
+
+function showGalleryImage(){
+
+    const lightboxImage =
+    document.getElementById("lightboxImage");
+
+    const image =
+    galleryImages[currentImage];
+
+    if(!image){
+        return;
+    }
+
+    lightboxImage.src =
+    image.currentSrc || image.src;
+
+    lightboxImage.alt =
+    image.alt;
+
+}
+
+
+/* =========================
+   LIGHTBOX BACKGROUND CLOSE
+========================= */
+
+document
+.getElementById("galleryLightbox")
+.addEventListener("click",function(event){
+
+    if(event.target === this){
+        closeGallery();
+    }
+
+});
+
+
+/* =========================
+   KEYBOARD
+========================= */
+
+document.addEventListener("keydown",function(event){
+
+    const lightbox =
+    document.getElementById("galleryLightbox");
+
+    if(!lightbox.classList.contains("active")){
+        return;
+    }
+
+    if(event.key === "Escape"){
+        closeGallery();
+    }
+
+    if(event.key === "ArrowRight"){
+        nextImage();
+    }
+
+    if(event.key === "ArrowLeft"){
+        previousImage();
+    }
+
+});
+
+
+/* =========================
+   MOBILE SWIPE
+========================= */
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+const lightbox =
+document.getElementById("galleryLightbox");
+
+lightbox.addEventListener("touchstart",function(event){
+
+    touchStartX =
+    event.changedTouches[0].screenX;
+
+},{passive:true});
+
+
+lightbox.addEventListener("touchend",function(event){
+
+    touchEndX =
+    event.changedTouches[0].screenX;
+
+    handleSwipe();
+
+},{passive:true});
+
+
+function handleSwipe(){
+
+    const distance =
+    touchEndX - touchStartX;
+
+    if(Math.abs(distance) < 50){
+        return;
+    }
+
+    if(distance < 0){
+        nextImage();
+    }else{
+        previousImage();
+    }
+
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+function toggleFAQ(button){
+
+    const item =
+    button.parentElement;
+
+    const answer =
+    item.querySelector(".faq-answer");
+
+    const active =
+    item.classList.contains("active");
+
+
+    document
+    .querySelectorAll(".faq-item")
+    .forEach(faq=>{
+
+        faq.classList.remove("active");
+
+        faq.querySelector(".faq-answer")
+        .style.maxHeight = null;
+
+        faq.querySelector(
+            ".faq-question span:last-child"
+        ).textContent = "+";
+
+    });
+
+
+    if(!active){
+
+        item.classList.add("active");
+
+        answer.style.maxHeight =
+        answer.scrollHeight + "px";
+
+        button.querySelector(
+            "span:last-child"
+        ).textContent = "−";
+
+    }
+
+}
+
+
+/* =========================
+   WHATSAPP FORM
+========================= */
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    const name =
+    document.getElementById("name")
+    .value.trim();
+
+    const phone =
+    document.getElementById("phone")
+    .value.trim();
+
+    const project =
+    document.getElementById("project")
+    .value.trim();
+
+    const message =
+    document.getElementById("message")
+    .value.trim();
+
+    const whatsappNumber =
+    "639355445981";
+
+    const text =
+`Hello IMS Iron Crafts!
+
+Name: ${name}
+Phone: ${phone}
+Project: ${project}
+
+Project Details:
+${message}
+
+I would like to request a quotation.
+
+Thank you!`;
+
+    const url =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(text);
+
+    window.open(url,"_blank");
+
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY > 500){
+
+        topBtn.style.display = "block";
+
+    }else{
+
+        topBtn.style.display = "none";
+
+    }
+
+});
+
+
+function scrollTopPage(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+/* =========================
+   CLOSE MOBILE MENU
+========================= */
+
+document.addEventListener("click",function(event){
+
+    const menu =
+    document.getElementById("mobileMenu");
+
+    const button =
+    document.getElementById("menuBtn");
+
+    if(
+        menu.classList.contains("active") &&
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+    ){
+
+        closeMenu();
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
